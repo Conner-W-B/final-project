@@ -15,8 +15,8 @@ def debug(bug):    #Bug reporting for troubleshooting
         bug_file.write("Traceback:" + trace + "\n")
         
 
-def subnet_input(i):             #Getting input for calculations
-    subnet = str(i) #input("Enter a subnet mask in decimal or /# format: ")
+def subnet_input():             #Getting input for calculations
+    subnet = str(input("Enter a subnet mask in decimal or /# format: "))
     subnet, validation = validate_subnet(subnet)
     if validation:
         return subnet
