@@ -63,7 +63,7 @@ def ip_format_validation(ip, flag_sub=False):              #Validation of ip or 
             debug("Error Code 5")
             return False
         
-    if flag_sub:    #Flag for if subnet mask for further validation
+    if flag_sub:    #Flag to check agasint standard subnet octet's
         sub_octets = subnet_list.subnet_ip
         if any(all(sub_octet != ip_octet for ip_octet in octets) for sub_octet in sub_octets):
             debug("Error Code 6")
