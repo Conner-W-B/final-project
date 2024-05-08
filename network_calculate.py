@@ -1,5 +1,5 @@
 
-
+ 
 class network():
                 #Define opject for every possible output for ip range
     def __init__(self=None,address=None,subnet=None,oct1=None,oct2=None,oct3=None,oct4=None,suboct=None,octpos=None,addresses=None,reversemask=None,bitmask=None,basenetwork=None,first=None,last=None,broadcast=None):
